@@ -1,8 +1,6 @@
 from rest_framework import serializers
 
 
-class ProfileSerializers:
-    pass
-
-
-class ProfileSerializers(ProfileSerializers.ModelSerializers):
+class ProfileRestSerializers(serializers.Serializers):
+    name = serializers.CharField(max_length=100)
+    surname = serializers.CharField(max_length=100)
